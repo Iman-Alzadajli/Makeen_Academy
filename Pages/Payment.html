@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .payment-container {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        max-width: 450px;
+        width: 100%;
+      }
+
+      .payment-container h2 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .form-group {
+        margin-bottom: 1.2rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.4rem;
+        font-weight: 500;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #f9f9f9;
+      }
+
+      .card-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 1.5rem;
+      }
+
+      .card-icons i {
+        font-size: 2rem;
+        color: #444;
+      }
+
+      .row {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .row .form-group {
+        flex: 1;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        background-color: #111;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #000;
+      }
+
+      @media (max-width: 500px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <h2>Payment Details</h2>
+
+      <div class="card-icons">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Cardholder Name</label>
+          <input type="text" id="name" placeholder="John Doe" required />
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="1234 5678 9012 3456"
+            required
+          />
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required />
+          </div>
+        </div>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </body>
+</html>
