@@ -16,6 +16,8 @@ namespace Makeen_Academy.Context
 
         }
 
+        overr
+
         //Debset
 
         public DbSet<Batch> Batches { get; set; }
