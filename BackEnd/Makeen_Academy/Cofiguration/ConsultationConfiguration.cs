@@ -9,9 +9,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Makeen_Academy.Cofiguration
 {
-    public class ConsultationConfiguration: IEntityTypeConfiguration<Consultation>
+    public class ConsultationConfiguration : IEntityTypeConfiguration<Consultation>
     {
-        public void Configure(EntityTypeBuilder<Consultation> builder)
+        void IEntityTypeConfiguration<Consultation>.Configure(EntityTypeBuilder<Consultation> builder)
         {
             builder.HasKey(c => c.Id);
             builder.Property(c => c.Id)
