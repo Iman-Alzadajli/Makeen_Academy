@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Makeen_Academy.Cofiguration
 {
-    public class ConsultationConfiguration
+    public class ConsultationConfiguration: IEntityTypeConfiguration<Consultation>
     {
         public void Configure(EntityTypeBuilder<Consultation> builder)
         {
@@ -32,4 +32,5 @@ namespace Makeen_Academy.Cofiguration
              .HasForeignKey(c => c.CustomerId)
              .OnDelete(DeleteBehavior.Cascade);
         }
+    }
 }
