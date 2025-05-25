@@ -29,7 +29,7 @@ namespace Makeen_Academy.Context
 
         public DbSet <Person> Persons { get; set; }
 
-        public DbSet<Purchase> Purposes { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
 
         public DbSet<Trainer> Trainers { get; set; }
 
