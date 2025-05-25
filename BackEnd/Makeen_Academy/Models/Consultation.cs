@@ -13,6 +13,8 @@ namespace Makeen_Academy.Models
         public int Id { get; set; }
         public string Topic { get; set; }
         public DateTime Date { get; set; }
+
+        public string Purpose { get; set; }
         public Trainer Trainer { get; set; }
         public int TrainerId { get; set; }
         public Customer Customer { get; set; }

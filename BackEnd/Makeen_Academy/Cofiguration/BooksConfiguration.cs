@@ -16,6 +16,10 @@ namespace Makeen_Academy.Cofiguration
             builder.ToTable("Book");
             builder.HasKey(b => b.Id);
 
+            builder.Property(b => b.Id)
+            .ValueGeneratedOnAdd()
+            .IsRequired();
+
             builder.Property(b => b.Name)
                 .IsRequired()
                 .HasMaxLength(50);
