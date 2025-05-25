@@ -13,21 +13,10 @@ namespace Makeen_Academy.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=ZADJALI\\MSSQLSERVER02; database = Makeen_Academy ; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
-
+            optionsBuilder.UseSqlServer("Data Source=LAPTOP-L47MA11A\\IBRAHIM; Initial Catalog = Makeen_Academy; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
+        //database = Makeen_Academy
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new BatchConfiguration());
-            modelBuilder.ApplyConfiguration(new BooksConfiguration());
-            modelBuilder.ApplyConfiguration(new ConsultationConfiguration());
-            modelBuilder.ApplyConfiguration(new CourseConfiguration());
-            modelBuilder.ApplyConfiguration(new CustomerConfiguration());
-            modelBuilder.ApplyConfiguration(new PersonConfiguration());
-            modelBuilder.ApplyConfiguration(new PurchaseConfiguration());
-            modelBuilder.ApplyConfiguration(new TrainerConfiguration());
-        }
 
         //DebsetT
 
@@ -44,6 +33,17 @@ namespace Makeen_Academy.Context
 
         public DbSet<Trainer> Trainers { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new BatchConfiguration());
+            modelBuilder.ApplyConfiguration(new BooksConfiguration());
+            modelBuilder.ApplyConfiguration(new ConsultationConfiguration());
+            modelBuilder.ApplyConfiguration(new CourseConfiguration());
+            modelBuilder.ApplyConfiguration(new CustomerConfiguration());
+            modelBuilder.ApplyConfiguration(new PersonConfiguration());
+            modelBuilder.ApplyConfiguration(new PurchaseConfiguration());
+            modelBuilder.ApplyConfiguration(new TrainerConfiguration());
+        }
 
 
 
