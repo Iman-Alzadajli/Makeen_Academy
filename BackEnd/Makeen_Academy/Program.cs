@@ -31,9 +31,9 @@
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("\n👥 Customer Management Options:");
                     Console.ResetColor();
-                    Console.WriteLine("1 - Add new user");
-                    Console.WriteLine("2 - Display all users");
-                    Console.WriteLine("3 - Delete user");
+                    Console.WriteLine("1 - Add new cutomer");
+                    Console.WriteLine("2 - Display all customers");
+                    Console.WriteLine("3 - Delete customer");
                     break;
 
                 case "2":
