@@ -32,10 +32,14 @@ namespace Makeen_Academy.Cofiguration
                .HasForeignKey(c => c.CourseId)
                .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasMany<Customer>()
-                   .WithMany()
-                   .UsingEntity(j=>j
-                   .ToTable("Enroll"));
+            //builder.HasMany<Customer>()
+            //       .WithMany()
+            //       .UsingEntity(j=>j
+            //       .ToTable("Enroll"));
+
+            builder.HasMany(batch => batch.CustomersList)
+                   .WithMany(customer => customer.BatchList)
+                   .UsingEntity(j => j.ToTable("Enroll"));
 
 
         }

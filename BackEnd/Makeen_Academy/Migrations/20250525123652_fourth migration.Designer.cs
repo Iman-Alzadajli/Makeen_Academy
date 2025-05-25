@@ -4,6 +4,7 @@ using Makeen_Academy.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Makeen_Academy.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250525123652_fourth migration")]
+    partial class fourthmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,15 +29,15 @@ namespace Makeen_Academy.Migrations
 
             modelBuilder.Entity("BatchCustomer", b =>
                 {
-                    b.Property<int>("BatchListId")
+                    b.Property<int>("BatchId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CustomersListId")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
-                    b.HasKey("BatchListId", "CustomersListId");
+                    b.HasKey("BatchId", "CustomerId");
 
-                    b.HasIndex("CustomersListId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Enroll", (string)null);
                 });
@@ -222,13 +225,13 @@ namespace Makeen_Academy.Migrations
                 {
                     b.HasOne("Makeen_Academy.Models.Batch", null)
                         .WithMany()
-                        .HasForeignKey("BatchListId")
+                        .HasForeignKey("BatchId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Makeen_Academy.Models.Customer", null)
                         .WithMany()
-                        .HasForeignKey("CustomersListId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
