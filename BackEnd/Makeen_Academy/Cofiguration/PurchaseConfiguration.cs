@@ -22,7 +22,15 @@ namespace Makeen_Academy.Cofiguration
                 .IsRequired()
                 .HasMaxLength(500);
 
-    
+            builder.HasOne(p => p.Book)
+             .WithMany(p => p.Purchases)
+             .HasForeignKey(p => p.BookId)
+             .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne(p => p.Customer)
+             .WithMany(p => p.PurchaseList)
+             .HasForeignKey(p => p.CustomerId)
+             .OnDelete(DeleteBehavior.Cascade);
 
         }
     }
