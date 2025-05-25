@@ -47,9 +47,9 @@ Welcome to **Makeen_Academy** — a collaborative learning project crafted with 
 
 ## 🔧 Tech Stack
 
-- **Front-End:** HTML, CSS, JavaScript, React (Optional)
-- **Back-End:** Node.js / Express (or any preferred stack)
-- **Database:** MongoDB / SQL
+- **Front-End:** HTML, CSS 
+- **Back-End:** C#
+- **Database:** SQL
 - **Version Control:** Git + GitHub
 
 ---
