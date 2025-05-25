@@ -19,9 +19,10 @@
             Console.WriteLine("4. 📝 Manage Courses & Batches");
             Console.WriteLine("5. 🧑‍⚕️ Manage Consultations");
             Console.WriteLine("6. 👨‍🏫 Manage Trainers");
+            Console.WriteLine("7. ❌ Exit System");
             Console.ResetColor();
 
-            Console.Write("\nEnter your choice (1-6): ");
+            Console.Write("\nEnter your choice (1-7): ");
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -80,6 +81,12 @@
                     Console.WriteLine("3 - Update trainer information");
                     Console.WriteLine("4 - Remove trainer");
                     break;
+
+                case "7":
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("\nExiting Makeen Academic System. Goodbye!");
+                    Console.ResetColor();
+                    return;
 
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
