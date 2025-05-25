@@ -29,7 +29,7 @@ namespace Makeen_Academy.Context
             modelBuilder.ApplyConfiguration(new TrainerConfiguration());
         }
 
-        //Debset
+        //DebsetT
 
         public DbSet<Batch> Batches { get; set; }
         public DbSet<Book> Books { get; set; }
