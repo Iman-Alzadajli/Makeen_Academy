@@ -13,6 +13,8 @@ namespace Makeen_Academy.Models
         public DateTime Start_Date { get; set; }
         public DateTime End_Date { get; set; }
 
+        public string Review { get; set; }
+
         public int TrainerId { get; set; }
         public int CourseId { get; set; }
 
