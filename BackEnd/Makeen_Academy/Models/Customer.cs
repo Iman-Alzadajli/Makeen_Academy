@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Makeen_Academy.Models
 {
-    internal class Customer:Person
+    public class Customer:Person
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Makeen_Academy.Models
 {
-    internal class Purchase
+    public class Purchase
     {
         public int Id { get; set; }
         public int Quantity { get; set; }
