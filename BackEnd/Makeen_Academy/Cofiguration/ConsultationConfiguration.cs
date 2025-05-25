@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Makeen_Academy.Cofiguration
 {
-    internal class ConsultationConfiguration
+    public class ConsultationConfiguration
     {
         public void Configure(EntityTypeBuilder<Consultation> builder)
         {
