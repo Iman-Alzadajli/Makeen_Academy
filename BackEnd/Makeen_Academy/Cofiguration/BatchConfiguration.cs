@@ -31,6 +31,11 @@ namespace Makeen_Academy.Cofiguration
                .WithMany(b => b.batches)
                .HasForeignKey(c => c.CourseId)
                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(c => c.CustomersList)
+                   .WithMany(c => c.BatchList);
+
+
         }
     }
 }

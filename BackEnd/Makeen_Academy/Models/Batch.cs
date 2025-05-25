@@ -21,6 +21,8 @@ namespace Makeen_Academy.Models
 
         public Course courses { get; set; }
 
+        public List<Customer> CustomersList { get; set; } = new List<Customer>();
+
 
     }
 }
