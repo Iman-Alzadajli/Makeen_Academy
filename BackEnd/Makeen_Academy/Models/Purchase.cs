@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Makeen_Academy.Models
 {
-    public class Course
+    internal class Purchase
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int Quantity { get; set; }
+        public string DeliveryLocation { get; set; }
     }
 }

@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Makeen_Academy.Models
 {
-    public class Batches
+    internal class Consultation
     {
-
+        public int Id { get; set; }
+        public string Topic { get; set; }
+        public DateTime Date { get; set; }
+     
     }
 }

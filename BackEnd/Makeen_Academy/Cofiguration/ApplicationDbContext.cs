@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Makeen_Academy.Models
+namespace Makeen_Academy.Cofiguration
 {
-    public class Course
+    internal class ApplicationDbContext
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
     }
 }

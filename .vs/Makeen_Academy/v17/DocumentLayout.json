@@ -1,11 +1,16 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\user pc\\source\\repos\\Makeen_Academy\\",
+=======
+  "WorkspaceRootPath": "C:\\Users\\USER PC\\source\\repos\\Makeen_Academy\\",
+>>>>>>> 280ded555969e22c61dc19f97b665aca4d412b8b
   "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -18,6 +23,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> 280ded555969e22c61dc19f97b665aca4d412b8b
     }
   ]
 }
