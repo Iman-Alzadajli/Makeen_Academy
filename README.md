@@ -29,7 +29,7 @@ Welcome to **Makeen_Academy** — a collaborative learning project crafted with 
 | Team Member | Role |
 |-------------|------|
 | **Safiya** *(Team Leader)* | Back-End Developer 👩‍💻 |
-| Almontaser  | Back-End Developer |
+| Almuntaser  | Back-End Developer |
 | Ibrahim     | Back-End Developer |
 | Zuwaina     | Back-End Developer |
 | Iman        | Back-End Developer |
